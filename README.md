@@ -1,5 +1,9 @@
 # viewport-guard
 
+[![test](https://github.com/Nadir-Bensalah/viewport-guard/actions/workflows/test.yml/badge.svg)](https://github.com/Nadir-Bensalah/viewport-guard/actions/workflows/test.yml)
+[![npm](https://img.shields.io/npm/v/viewport-guard)](https://www.npmjs.com/package/viewport-guard)
+[![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](https://github.com/Nadir-Bensalah/viewport-guard/blob/main/package.json)
+
 **Your CSS compiles. Your tests pass. Your homepage still scrolls sideways on a 320px phone.**
 
 Nothing in a linter, a type checker or a unit test can tell you that a card overflows at 360px. That depends on the font that actually loaded, the text that was actually there, and the box the browser actually computed. You have to render the page and measure it.
