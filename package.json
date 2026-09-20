@@ -1,0 +1,24 @@
+{
+  "name": "viewport-guard",
+  "version": "0.1.0",
+  "description": "Catch horizontal overflow, tiny tap targets and unreadable text across real viewport widths. Drives headless Chrome directly — no Puppeteer, no Playwright, no dependencies.",
+  "type": "module",
+  "bin": { "viewport-guard": "./src/cli.js" },
+  "main": "./src/index.js",
+  "exports": { ".": "./src/index.js" },
+  "files": ["src", "README.md", "LICENSE"],
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "responsive", "viewport", "overflow", "accessibility", "a11y",
+    "wcag", "tap-target", "mobile", "headless-chrome", "cdp", "ci",
+    "testing", "layout", "regression"
+  ],
+  "author": "Nadir Ben Salah <nadir.bensalah91@gmail.com> (https://nadirbensalah.com)",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/Nadir-Bensalah/viewport-guard.git" },
+  "bugs": { "url": "https://github.com/Nadir-Bensalah/viewport-guard/issues" },
+  "homepage": "https://github.com/Nadir-Bensalah/viewport-guard#readme"
+}

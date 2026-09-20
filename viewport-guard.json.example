@@ -1,0 +1,7 @@
+{
+  "urls": ["http://localhost:3000", "http://localhost:3000/pricing"],
+  "widths": [320, 390, 768, 1440],
+  "minTapTarget": 24,
+  "minFontSize": 11.5,
+  "ignore": [".mapbox-canvas", "[data-carousel]"]
+}

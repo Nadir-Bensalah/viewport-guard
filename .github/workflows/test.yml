@@ -1,0 +1,19 @@
+name: test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # The runner ships with Chrome. Point at it explicitly rather than
+      # trusting a path that could change.
+      - run: echo "CHROME_PATH=$(which google-chrome || which chromium-browser)" >> $GITHUB_ENV
+      - run: npm test
